@@ -89,13 +89,6 @@ class TicTacToe
   def over?
     won? || full? || draw?
   end
-  
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-    elsif draw?(board)
-    puts "Cat's Game!"
-    end
-    end
-
+ 
   
 end
