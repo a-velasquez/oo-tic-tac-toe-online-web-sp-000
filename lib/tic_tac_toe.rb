@@ -66,16 +66,7 @@ class TicTacToe
       turn
     end
   end 
-  
-  def play(board)
-    until over?(board) == true
-    turn(board)
-  end
-    
-    #full?
-  def full?
-   @board.all?{|occupied| occupied != " "}
-  end
+ 
  
   
 end
