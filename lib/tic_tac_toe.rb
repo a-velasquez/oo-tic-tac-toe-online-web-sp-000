@@ -39,7 +39,6 @@ class TicTacToe
   def valid_move?(index)
     index.between?(0,8) && !position_taken?(index)
   end
-  
     
   def turn
     puts "Player #{current_player}, please enter a number 1-9:"
