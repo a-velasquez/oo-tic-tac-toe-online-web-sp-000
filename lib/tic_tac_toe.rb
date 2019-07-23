@@ -65,6 +65,8 @@ class TicTacToe
     else
       turn
     end
+  end 
+  
     
     #full?
   def full?
