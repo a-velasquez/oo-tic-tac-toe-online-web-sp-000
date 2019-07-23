@@ -40,27 +40,14 @@ class TicTacToe
     index.between?(0,8) && !position_taken?(index)
   end
   
-  def turn_count(board)
-    counter = 0
-    board.each do |space|
-    if space == "X" || space == "O"
-    counter += 1
-    end
-  end
-    counter
-  end
-  
-  def current_player(board)
-    turn_count(@board) % 2 == 0 ? "X" : "O"
-  end
     
   def turn
-    puts "Please enter 1-9:"
+    puts "Player #{current_player}, please enter a number 1-9:"
     input = gets.strip
     index = input_to_index(input)
-    char = current_player
+    cp = current_player
     if valid_move?(index)
-      move(index, char)
+      move(index, cp)
       display_board
     else
       turn
