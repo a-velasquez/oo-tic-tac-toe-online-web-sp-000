@@ -67,6 +67,10 @@ class TicTacToe
     end
   end 
   
+      def play(board)
+    until over?(board) == true
+    turn(board)
+    end
     
     #full?
   def full?
