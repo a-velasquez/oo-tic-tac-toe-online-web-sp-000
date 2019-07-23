@@ -49,6 +49,8 @@ class TicTacToe
   end
     counter
   end
+  
+  
     
   def turn
     puts "Please enter 1-9:"
