@@ -65,6 +65,21 @@ class TicTacToe
     else
       turn
     end
-end
+    
+    #full?
+  def full?
+   @board.all?{|occupied| occupied != " "}
+  end
+
+    #draw
+  def draw?
+    !(won?) && (full?)
+  end
+
+#over?
+  def over?
+    won? || full? || draw?
+  end
+
   
 end
