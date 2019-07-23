@@ -67,10 +67,10 @@ class TicTacToe
     end
   end 
   
-      def play(board)
+  def play(board)
     until over?(board) == true
     turn(board)
-    end
+  end
     
     #full?
   def full?
