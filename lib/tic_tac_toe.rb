@@ -43,6 +43,8 @@ class TicTacToe
   def turn_count
     @board.count{|token| token == "X" || token == "O"}
   end
+  
+  
     
   def turn
     puts "Player #{current_player}, please enter a number 1-9:"
