@@ -47,7 +47,6 @@ class TicTacToe
         number_of_turns += 1
     end
   end
-  return number_of_turns
     
   def turn
     puts "Please enter 1-9:"
